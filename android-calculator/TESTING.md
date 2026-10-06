@@ -7,7 +7,7 @@
 - Debug build and lint: **passed; no lint issues**.
 - Unsigned release build and lint: **passed; no lint issues**.
 - Debug APK signature verification: **passed**, APK Signature Scheme v2.
-- Android 15 / API 35 x86_64 emulator: initial full smoke flow **18 checks passed** with no application crashes.
+- Android 15 / API 35 x86_64 emulator: final full smoke flow **19 checks passed**, including locked-screen plaintext absence and unprotected draft preservation across theme changes; no application crashes.
 - APK manifest inspection: minimum API 26, target API 35, **no requested permissions**; runtime dependency report: **no dependencies**.
 
 These checks do not claim exhaustive device coverage, cryptographic certification, or physical-device testing. Manual stress cases below remain useful before release.
