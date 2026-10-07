@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apple’s new Mac mini, featuring M6 and M5 Pro — Apple Newsroom</title>
+<meta name="description" content="Mac mini delivers up to 4x faster AI performance, up to 2x faster graphics and storage, along with enhanced connectivity — all in its ultracompact footprint.">
+<style>
+  :root {
+    --ink: #1d1d1f;
+    --muted: #6e6e73;
+    --pill: #e8e8ed;
+    --gutter: 123px;
+  }
+
+  *,
+  *::before,
+  *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: #fff;
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+                 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .shell {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* ---------- Global header ---------- */
+
+  .site-header {
+    height: 52px;
+    display: flex;
+    align-items: center;
+  }
+
+  .site-header .shell {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .site-nav {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+  }
+
+  .site-nav a {
+    font-size: 14px;
+    line-height: 1;
+    color: var(--ink);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .site-nav a:hover { text-decoration: underline; }
+
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    height: 32px;
+    padding: 0 14px;
+    border-radius: 999px;
+    background: var(--pill);
+    color: var(--muted);
+  }
+
+  .search svg {
+    width: 14px;
+    height: 14px;
+    flex: 0 0 auto;
+    display: block;
+  }
+
+  .search input {
+    width: 119px;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    font: inherit;
+    font-size: 14px;
+    line-height: 1;
+    color: var(--ink);
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .search input:focus { outline: none; }
+
+  .search input::placeholder {
+    color: var(--muted);
+    opacity: 1;
+  }
+
+  .search input::-webkit-search-cancel-button { display: none; }
+
+  /* ---------- Article ---------- */
+
+  .article {
+    max-width: 805px;
+    margin-left: 202px;
+    padding: 68px 0 120px;
+  }
+
+  .eyebrow {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .dateline {
+    margin: 6px 0 0;
+    font-size: 17px;
+    line-height: 22px;
+    color: var(--muted);
+  }
+
+  .headline {
+    margin: 34px 0 0;
+    font-size: clamp(30px, 3.73vw, 56px);
+    font-weight: 600;
+    line-height: 1.09;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+
+  .standfirst {
+    margin: 24px 0 0;
+    font-size: clamp(18px, 1.6vw, 24px);
+    font-weight: 400;
+    line-height: 1.42;
+    letter-spacing: -0.005em;
+    color: var(--ink);
+  }
+
+  /* ---------- Responsive ---------- */
+
+  @media (max-width: 1200px) {
+    :root { --gutter: 48px; }
+    .article { margin-left: 120px; }
+  }
+
+  @media (max-width: 900px) {
+    :root { --gutter: 32px; }
+    .article { margin-left: 0; padding-top: 48px; }
+  }
+
+  @media (max-width: 700px) {
+    :root { --gutter: 22px; }
+    .site-nav { gap: 24px; }
+    .site-nav .search { display: none; }
+    .article { padding-bottom: 72px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="shell">
+    <a class="logo" href="/newsroom/">Newsroom</a>
+
+    <nav class="site-nav" aria-label="Newsroom">
+      <a href="/newsroom/services/">Apple Services</a>
+      <a href="/newsroom/stories/">Apple Stories</a>
+
+      <form class="search" role="search" action="/newsroom/search/" method="get">
+        <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+          <circle cx="6.6" cy="6.6" r="4.9" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <line x1="10.3" y1="10.3" x2="14.4" y2="14.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <label class="visually-hidden" for="newsroom-search">Search Newsroom</label>
+        <input id="newsroom-search" type="search" name="q" placeholder="Search Newsroom" autocomplete="off">
+      </form>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="shell">
+    <article class="article">
+      <p class="eyebrow">Press Release</p>
+      <p class="dateline">August 25, 2026</p>
+
+      <h1 class="headline">Apple’s new Mac mini, featuring M6 and M5 Pro, delivers a massive leap in AI performance, supercharging the leading desktop for always-on agentic computing</h1>
+
+      <p class="standfirst">Mac mini delivers up to 4x faster AI performance, up to 2x faster graphics and storage, along with enhanced connectivity — all in its ultracompact footprint</p>
+    </article>
+  </div>
+</main>
+
+</body>
+</html>
