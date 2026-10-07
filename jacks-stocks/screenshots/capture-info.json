@@ -1,0 +1,24 @@
+{
+  "serial": "emulator-5554",
+  "screens": [
+    "01-overview-dark.png",
+    "02-earnings-dark.png",
+    "03-holdings-dark.png",
+    "04-transactions-dark.png",
+    "05-charts-value-dark.png",
+    "06-charts-earnings-dark.png",
+    "07-charts-periods-dark.png",
+    "08-allocation-dark.png",
+    "09-yahoo-settings-dark.png",
+    "10-overview-light.png",
+    "11-stock-details-light.png",
+    "12-offline-restart-light.png",
+    "13-offline-refresh-light.png"
+  ],
+  "device": "Android SDK built for x86_64",
+  "android": "14",
+  "refresh_status": "Yahoo Finance: 3 quotes, 193 closing prices saved.",
+  "catalogue_status": "Downloaded 2333 NSE instruments. Stock search is ready.",
+  "offline_check": true,
+  "note": "Actual emulator screenshots. Fictional transactions; prices requested by explicit Yahoo refresh. See refresh status in screenshots."
+}

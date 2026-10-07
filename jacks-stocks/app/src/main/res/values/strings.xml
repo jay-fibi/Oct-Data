@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Jacks stocks</string>
+    <string name="charts_unavailable">Charts unavailable: %1$s</string>
+    <string name="allow_review_screenshots">Allow screenshots on this debug build</string>
+    <color name="icon_background">#10243A</color>
+    <style name="AppTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#40DDAC</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">#0B1422</item>
+        <item name="android:navigationBarColor">#0B1422</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">#0B1422</item>
+    </style>
+</resources>
