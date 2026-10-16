@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshMart Grocery Store</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-icon" aria-hidden="true">🥬</span>
+        <span class="brand-text">FreshMart</span>
+      </a>
+      <div class="search-bar">
+        <input
+          id="search-input"
+          type="search"
+          placeholder="Search fresh produce, dairy, bakery..."
+          aria-label="Search groceries"
+        />
+      </div>
+      <button id="cart-toggle-btn" class="cart-btn" type="button" aria-expanded="false">
+        <span>🛒 Cart</span>
+        <span id="cart-count" class="cart-badge">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top" class="main-container">
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-tag">Farm-to-Table Daily</span>
+        <h1>Fresh Groceries Delivered to Your Door</h1>
+        <p>
+          Hand-picked organic produce, artisan bakery items, farm-fresh dairy, and pantry essentials at everyday low prices.
+        </p>
+        <a href="#catalog" class="cta-btn">Shop Now</a>
+      </div>
+      <div class="hero-highlights">
+        <div class="highlight-card">
+          <strong>🚚 Free Delivery</strong>
+          <span>On orders over $35</span>
+        </div>
+        <div class="highlight-card">
+          <strong>🌱 100% Freshness</strong>
+          <span>Quality guaranteed daily</span>
+        </div>
+        <div class="highlight-card">
+          <strong>⚡ Same-Day Pickup</strong>
+          <span>Ready in under 2 hours</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalog" class="catalog-section">
+      <div class="catalog-header">
+        <h2>Shop by Category</h2>
+        <div id="category-filters" class="category-filters" role="tablist" aria-label="Product categories">
+          <button class="filter-btn active" type="button" data-category="all">All</button>
+          <button class="filter-btn" type="button" data-category="Produce">Produce</button>
+          <button class="filter-btn" type="button" data-category="Dairy">Dairy</button>
+          <button class="filter-btn" type="button" data-category="Bakery">Bakery</button>
+          <button class="filter-btn" type="button" data-category="Beverages">Beverages</button>
+          <button class="filter-btn" type="button" data-category="Pantry">Pantry</button>
+        </div>
+      </div>
+
+      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      <p id="empty-catalog-msg" class="empty-msg" hidden>No grocery items match your search.</p>
+    </section>
+
+    <section class="store-info">
+      <div class="info-card">
+        <h3>📍 Store Location</h3>
+        <p>742 Evergreen Terrace, Market District</p>
+        <p>Open daily: 7:00 AM – 10:00 PM</p>
+      </div>
+      <div class="info-card">
+        <h3>📞 Customer Support</h3>
+        <p>Phone: (555) 234-5678</p>
+        <p>Email: hello@freshmart.local</p>
+      </div>
+      <div class="info-card">
+        <h3>💳 Weekly Deals</h3>
+        <p>Save 15% on seasonal organic fruits every Wednesday.</p>
+      </div>
+    </section>
+  </main>
+
+  <aside id="cart-drawer" class="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="cart-close-btn" class="close-btn" type="button" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+      <p class="cart-empty">Your cart is empty. Add some fresh items!</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-summary-row">
+        <span>Subtotal</span>
+        <strong id="cart-subtotal">$0.00</strong>
+      </div>
+      <div class="cart-summary-row">
+        <span>Delivery</span>
+        <span id="cart-delivery">$0.00</span>
+      </div>
+      <div class="cart-summary-row total-row">
+        <span>Total</span>
+        <strong id="cart-total">$0.00</strong>
+      </div>
+      <div class="cart-actions">
+        <button id="clear-cart-btn" class="secondary-btn" type="button">Clear Cart</button>
+        <button id="checkout-btn" class="primary-btn" type="button">Checkout</button>
+      </div>
+      <p id="checkout-status" class="checkout-status" role="status" aria-live="polite"></p>
+    </div>
+  </aside>
+  <div id="cart-backdrop" class="cart-backdrop" hidden></div>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="footer-year">2026</span> FreshMart Grocery Store. Freshness you can trust.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
