@@ -1,0 +1,4 @@
+[log] Initial page loaded: Jay's JavaScript Demo
+[log] Triggering greeting button
+[log] Updated message: Hello, Jay! Your JavaScript is working.
+[info] Button pressed: true
