@@ -1,0 +1,10 @@
+{
+  "name": "jay-browser-demo",
+  "version": "1.0.0",
+  "description": "A dependency-free HTML, CSS, and JavaScript example.",
+  "entryPoint": "index.html",
+  "assets": {
+    "javascript": "script.js",
+    "stylesheet": "styles.css"
+  }
+}
